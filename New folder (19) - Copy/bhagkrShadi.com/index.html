@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BhagkrShadi.com</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>BhagkrShadi.com</h1>
+        <p>Shadi ka tension? Hum hai na! The ultimate elopement planner.</p>
+
+    </header>
+    <main>
+        <section id="escape-generator">
+            <h2>Plan your Escape</h2>
+            <form id="escape-form">
+                <label for="vehicle">Choose Your escape vehicle:</label>
+                <select id="vehicle" name="vehicle">
+                    <option value="auto">Auto Rikshaw</option>
+                    <option value="train">Train</option>
+                    <option value="bike">Bullet Bike</option>
+                    <option value="helicopter">Helicopter</option>
+                    <option value="car">Oudi</option>
+
+                </select>
+                <br>
+
+                <label for="budget">What's your budget?</label>
+                <select id="budget" name="budget">
+                    <option value="dhaba">Low-key Dhaba or Nani-Maa ki Rassoi</option>
+                    <option value="hotel">5-star Hotel</option>
+                    <option value="couch">Friend's Couch</option>
+                </select>
+                <br>
+
+                <button type="button" onclick="generateEscapePlan()">Generate Escape Plan</button>
+
+            </form>
+            <p id="escape-result"></p>
+
+        </section>
+
+        <section id="compatibility-test">
+            <h2>Runaway Compatibility Test</h2>
+            <button onclick="runCompatibilityTest()">Start Test</button>
+            <p id="compatibility-result"></p>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <blockquote>"Thanks to Visit BhagkrShadi.com,we successfully eloped in style!"-Raj & Simaran</blockquote>
+            <blockquote>"the escapeplan was perfect.even the police couldn't catch us!"-Romeo & Juliet</blockquote>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Disclaimer: This site is for entertainment purposes only. dont't take it in seriously way!</p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
